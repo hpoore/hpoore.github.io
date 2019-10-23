@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/twitter_sentiment)
+[Project 1 Title](/twitter_sentiment.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
