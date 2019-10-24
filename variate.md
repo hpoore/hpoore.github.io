@@ -2,7 +2,7 @@
 
 **Project description:** One of the homework assignments for my Information Exposition class required an exploratory data analysis of data collected by the student not previoulst published on the internet. This resulted in me using the Alphavantage API and BeautifulSoup4 to retrieve financial data and article text.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+### 1. Using Alphavantage API retrieve stock data for each company 
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
