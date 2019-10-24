@@ -32,8 +32,19 @@ for i in df_list:
 ```
 <img src="images/stock_df.png?raw=true"/>
 ### 3. Support the selection of appropriate statistical tools and techniques
+```python
+rcParams['figure.figsize'] = 11.7,8.27
+y = list(stock_df['Change Percentage'])
+x = list(stock_df.index)
+sns.set(style='whitegrid')
+plt.xlabel('Stock')
+plt.ylabel('Percent Change')
+plt.title('Stock Price Change Percentage from 10/7/19 to 10/11/19')
+ax = sns.barplot(x=x, y=y,palette="GnBu_d")
+```
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/stock_graph.png?raw=true"/>
+
 
 ### 4. Provide a basis for further data collection through surveys or experiments
 
