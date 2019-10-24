@@ -9,7 +9,7 @@
 
 ---
 [How Does YouTube's Trending Videos Algorithm Work?](/youtube.md)
-<img src="images/youtube_graph.jpg?raw=true"/>
+<img src="images/youtube_graph.png?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)
