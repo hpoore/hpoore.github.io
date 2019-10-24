@@ -12,8 +12,8 @@
 <img src="images/youtube_graph.png?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Using Multivariate Feature Analysis to Predict HIV Rates in Third World Countries](/variate.md)
+<img src="images/variate_graph.png?raw=true"/>
 
 ---
 
