@@ -8,7 +8,7 @@
 <img src="images/twitter_graph.png?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[How Does YouTube's Trending Videos Algorithm Work?](/youtube.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
