@@ -4,7 +4,7 @@
 
 ### 2019
 
-[Project 1 Title](/twitter_sentiment.md)
+[Using Sentiment Analysis to Understand the Effect of News on the Stock Market](/twitter_sentiment.md)
 <img src="Screen Shot 2019-10-23 at 8.02.19 PM.pngraw=true"/>
 
 ---
