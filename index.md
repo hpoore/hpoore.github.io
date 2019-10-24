@@ -5,7 +5,7 @@
 ### 2019
 
 [Using Sentiment Analysis to Understand the Effect of News on the Stock Market](/twitter_sentiment.md)
-<img src="twitter_graph.pngraw=true"/>
+<img src="images/twitter_graph.pngraw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
