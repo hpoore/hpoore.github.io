@@ -7,9 +7,13 @@
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
 ```python
-if (isAwesome):
-  print(true)
+# get weekly stock price data for each company
+msft = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=M5BAAOQ3PWDT935S&datatype=csv").content
+msft_df = pd.read_csv(io.StringIO(msft.decode('utf-8')))
+# https://stackoverflow.com/questions/39213597/convert-text-data-from-requests-object-to-dataframe-with-pandas
+msft_df.head()
 ```
+<img src="images/msft_df.png?raw=true"/>
 
 ### 2. Assess assumptions on which statistical inference will be based
 
