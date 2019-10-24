@@ -2,10 +2,10 @@
 
 ---
 
-### Category Name 1 
+### 2019
 
 [Project 1 Title](/twitter_sentiment.md)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="Screen Shot 2019-10-23 at 8.02.19 PM.pngraw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
