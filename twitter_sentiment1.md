@@ -142,5 +142,5 @@ plt.title('Average Compound Article Sentiment Score vs Stock Price Change Percen
 
 
 ### Analysis Explained More In Depth in Medium Article
-<a href="https://medium.com/@haydenpoore/using-sentiment-analysis-to-understand-the-effect-of-news-on-the-stock-market-c346dc8c5a90"> Link </a?>
+<a href="https://medium.com/@haydenpoore/using-sentiment-analysis-to-understand-the-effect-of-news-on-the-stock-market-c346dc8c5a90"> Link 
 
