@@ -49,7 +49,7 @@ ax = sns.barplot(x=x, y=y,palette="GnBu_d")
 ### 4. Create Web Scraper to Extract Article Data
 
 I created a crawler like object that extracted article text from the CNBC website.
-Attatched below is the code to get article data for Apple. 
+Attatched below is the code to get article data for Apple using BeautifulSoup4.
 ```python
 aapl_links = ['https://www.cnbc.com/2019/10/09/apple-augmented-reality-glasses-to-launch-in-2020-kuo.html'
               ,'https://www.cnbc.com/2019/10/07/apple-macos-catalina-released-for-macs-whats-new-and-how-to-get-it.html',
@@ -66,8 +66,65 @@ for i in aapl_links:
     aapl_list.append(aapl_str)
        
 ```
+ 
+ ### 5. Use VADER to Generate Sentiment Scores for Article Text
+ ``` python
+ aapl_avg = 0 
+for i in range(len(aapl_list)):
+    analyzer = SentimentIntensityAnalyzer()
+    vs = analyzer.polarity_scores(aapl_list[i])
+    aapl_avg += vs['compound']
+    scores = list(vs.values())
+    scores_df.loc[article_titles[i]] = scores
+aapl_avg = aapl_avg / 3
 
+j = 3
+amzn_avg = 0 
+for i in range(len(amzn_list)):
+    analyzer = SentimentIntensityAnalyzer()
+    vs = analyzer.polarity_scores(amzn_list[i])
+    amzn_avg += vs['compound']
+    scores = list(vs.values())
+    scores_df.loc[article_titles[j]] = scores
+    j += 1
+amzn_avg = amzn_avg / 3
 
+j = 6 
+fb_avg = 0
+for i in range(len(fb_list)):
+    analyzer = SentimentIntensityAnalyzer()
+    vs = analyzer.polarity_scores(fb_list[i])
+    fb_avg += vs['compound']
+    scores = list(vs.values())
+    scores_df.loc[article_titles[j]] = scores
+    j+=1
+fb_avg = fb_avg / 3
+
+j = 9 
+googl_avg = 0
+for i in range(len(googl_list)):
+    analyzer = SentimentIntensityAnalyzer()
+    vs = analyzer.polarity_scores(googl_list[i])
+    googl_avg += vs['compound']
+    scores = list(vs.values())
+    scores_df.loc[article_titles[j]] = scores
+    j+=1
+googl_avg = googl_avg / 3
+
+j = 12
+msft_avg = 0
+for i in range(len(msft_list)):
+    analyzer = SentimentIntensityAnalyzer()
+    vs = analyzer.polarity_scores(msft_list[i])
+    msft_avg += vs['compound']
+    scores = list(vs.values())
+    scores_df.loc[article_titles[j]] = scores
+    j+=1
+msft_avg = msft_avg / 3
+ 
+ ```
+
+<img src="images/sentiment_df.png?raw=true"/>
 
 
 
