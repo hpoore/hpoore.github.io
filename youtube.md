@@ -125,3 +125,6 @@ avg_view_comment_ratio = sum(view_comment_ratio) / len(view_comment_ratio)
 
 ```
 avg_view_comment_ratio = 0.004453074027923107
+
+### Analysis Explained More In Depth in Medium Article
+<a href="https://medium.com/information-expositions-f2019/how-does-youtubes-trending-videos-algorithm-work-a613f5b58917"> Link
