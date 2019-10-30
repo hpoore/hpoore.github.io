@@ -26,7 +26,7 @@ for title in title_list:
 <img src="images/sent_graph.png?raw=true"/>
 
 
-### 4. Find Best Time of Day to Post a Video
+### 4. Find Best Time of Day to Post a Video by Looking at Hour Posted and Total Views for Each Video
 
 ```python
 time_list = list(df['publish_time'])
@@ -55,7 +55,25 @@ hour_freq_df = pd.DataFrame()
 hour_freq_df['Hour'] = hours
 hour_freq_df['Occurances'] = hour_freq
 ```
-<img src="images/new_plot(5).png?raw=true">
+<img src="images/newplot(5).png?raw=true">
+
+```python
+for i in range(len(df)):
+    hour_dict_views[df.iloc[i]['publish_time'][11:13]] += df.iloc[i]['views']
+
+views_hour = list(hour_dict_views.keys())
+views_count = list(hour_dict_views.values())
+hour_views_df = pd.DataFrame()
+hour_views_df['Hour'] = views_hour
+hour_views_df['Number of Views'] = views_count
+
+```
+<img src="images/newplot(6).png?raw=true">
+
+
+
+
+
 
 ### 4. Provide a basis for further data collection through surveys or experiments
 
