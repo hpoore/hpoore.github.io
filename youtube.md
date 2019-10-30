@@ -22,9 +22,9 @@ for title in title_list:
 ```
 <img src="images/title_df.png?raw=true">
 
-### 3. Support the selection of appropriate statistical tools and techniques
+### 3. Visualize Data
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/sent_graph.png?raw=true"/>
 
 ### 4. Provide a basis for further data collection through surveys or experiments
 
