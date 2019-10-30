@@ -20,6 +20,7 @@ for title in title_list:
     temp_score_dict = analyzer.polarity_scores(title)
     score_list.append(temp_score_dict['compound'])
 ```
+<img src="images/title_df.png?raw=true">
 
 ### 3. Support the selection of appropriate statistical tools and techniques
 
