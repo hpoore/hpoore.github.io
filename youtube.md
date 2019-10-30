@@ -75,7 +75,31 @@ hour_views_df['Number of Views'] = views_count
 
 
 
-### 4. Provide a basis for further data collection through surveys or experiments
+### 4. Calculate User Engagement Statistics
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+```python
+avg_df = pd.DataFrame()
+avg_df['Average Views'] = views
+avg_df['Average Likes'] = avg_likes
+avg_df['Average Dislikes'] = avg_dislikes
+avg_df['Average Comments'] = avg_comments
 
+avg_views = round(df['views'].mean(),0)
+avg_likes = round(df['likes'].mean(),0)
+avg_dislikes = round(df['dislikes'].mean(),0)
+avg_comments = round(df['comment_count'].mean(),0)
+
+avg_list = [avg_views,avg_likes,avg_dislikes,avg_comments]
+
+avg_dict = {}
+avg_dict['Average Views'] = avg_views
+avg_dict['Average Likes'] = avg_likes
+avg_dict['Average Dislikes'] = avg_dislikes
+avg_dict['Average Comments'] = avg_comments
+
+avg_df = pd.DataFrame()
+avg_df = avg_df.from_dict(avg_dict, orient='index')
+
+
+```
+<img src="images/user_eng.png?raw=true">
