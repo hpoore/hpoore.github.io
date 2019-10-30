@@ -22,13 +22,42 @@ for title in title_list:
 ```
 <img src="images/title_df.png?raw=true">
 
-### 3. Visualize Data
-
+### 3. Visualize Sentiment Scores
 <img src="images/sent_graph.png?raw=true"/>
+
+
+### 4. Find Best Time of Day to Post a Video
+
+```python
+time_list = list(df['publish_time'])
+hour_list = []
+
+for i in range(len(time_list)):
+    if len(time_list[i]) != 24:
+        print('broken')
+        break
+    else:
+        hour_list.append(time_list[i][11:13])
+        
+hour_dict = {}
+hour_set = set(hour_list)
+hour_dict = hour_dict.fromkeys(hour_set,0)
+hour_dict_views = hour_dict.fromkeys(hour_set,0)
+
+for key in hour_dict:
+    for i in range(len(hour_list)):
+        if hour_list[i] == key:
+            hour_dict[key] += 1
+
+hour_freq = list(hour_dict.values())
+hours = list(hour_dict.keys())
+hour_freq_df = pd.DataFrame()
+hour_freq_df['Hour'] = hours
+hour_freq_df['Occurances'] = hour_freq
+```
+<img src="images/new_plot(5).png?raw=true">
 
 ### 4. Provide a basis for further data collection through surveys or experiments
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
