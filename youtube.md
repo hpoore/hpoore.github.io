@@ -103,3 +103,25 @@ avg_df = avg_df.from_dict(avg_dict, orient='index')
 
 ```
 <img src="images/user_eng.png?raw=true">
+
+```python
+view_like_ratio = []
+for i in range(len(df)):
+    views = df['views']
+    likes = df['likes']
+    view_like_ratio.append(df['likes'][i] / df['views'][i])
+avg_view_like_ratio = sum(view_like_ratio) / len(view_like_ratio)
+
+```
+avg_view_like_ratio = 0.03441297673088293
+
+```python
+view_comment_ratio = []
+for i in range(len(df)):
+    views = df['views']
+    comments = df['comment_count']
+    view_comment_ratio.append(df['comment_count'][i] / df['views'][i])
+avg_view_comment_ratio = sum(view_comment_ratio) / len(view_comment_ratio)
+
+```
+avg_view_comment_ratio = 0.004453074027923107
