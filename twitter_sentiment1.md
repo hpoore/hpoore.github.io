@@ -123,8 +123,23 @@ for i in range(len(msft_list)):
 msft_avg = msft_avg / 3
  
  ```
+ 
+ <img src="images/sentiment_df.png?raw=true"/>
+ 
+ ### 6. Visualize results
+ ```python
+ for i,type in enumerate(names):
+        y = percentages[i]
+        x = averages[i]
+        plt.scatter(x, y,color='blue')
+        plt.text(x, y, type, fontsize=12)
+plt.xlabel('Average Compound Article Sentiment Scores')
+plt.ylabel('Stock Price Change Percentage')
+plt.title('Average Compound Article Sentiment Score vs Stock Price Change Percentage for 10/7/19 - 10/11/19')
+ 
+ ```
+<img src="images/sentiment_graph.png?raw=true"/>
 
-<img src="images/sentiment_df.png?raw=true"/>
 
 
 
