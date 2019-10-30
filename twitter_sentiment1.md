@@ -46,8 +46,29 @@ ax = sns.barplot(x=x, y=y,palette="GnBu_d")
 <img src="images/stock_graph.png?raw=true"/>
 
 
-### 4. Provide a basis for further data collection through surveys or experiments
+### 4. Create Web Scraper to Extract Article Data
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+I created a crawler like object that extracted article text from the CNBC website.
+Attatched below is the code to get article data for Apple. 
+```python
+aapl_links = ['https://www.cnbc.com/2019/10/09/apple-augmented-reality-glasses-to-launch-in-2020-kuo.html'
+              ,'https://www.cnbc.com/2019/10/07/apple-macos-catalina-released-for-macs-whats-new-and-how-to-get-it.html',
+            'https://www.cnbc.com/2019/10/11/apple-aapl-hits-all-time-high.html']
+aapl_list = []
+for i in aapl_links:
+    temp_list = []
+    page = requests.get(i).text
+    soup = BeautifulSoup(page, 'html.parser')
+    a = soup.find_all(class_='group')
+    for strong_tag in a:
+        temp_list.append(strong_tag.text.encode('ascii', 'ignore').decode("utf-8").strip().replace("\"",''))
+        aapl_str = ' '.join(temp_list)
+    aapl_list.append(aapl_str)
+       
+```
+
+
+
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
