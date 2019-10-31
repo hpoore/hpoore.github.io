@@ -1,3 +1,5 @@
+{% include google_analytics.html %}
+
 ## Portfolio
 
 ---
