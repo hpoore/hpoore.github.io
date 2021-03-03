@@ -3,6 +3,8 @@
 ## Portfolio
 
 ---
+### 2021
+[Module 2 Information Visualization](/mod_2.html)
 
 ### 2019
 
