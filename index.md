@@ -3,9 +3,12 @@
 ## Portfolio
 
 ---
+### 4602 Final
+[Final Project: World Happiness Report](Final(1).html)
+
 ### 2021
 [Module 2 Information Visualization](/mod_2.html)
-[Final Project: World Happiness Report](Final(1).html)
+
 
 ### 2019
 
