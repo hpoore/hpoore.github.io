@@ -6,6 +6,9 @@
 ### 4602 Final
 [Final Project: World Happiness Report](Final.html)
 
+### Module 3 4602
+[Module 3 Information Visualization](module_3.html)
+
 ### 2021
 [Module 2 Information Visualization](/mod_2.html)
 
